@@ -1,102 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yash Bankhele | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 5px 0;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #222;
-    }
-    .projects, .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      flex: 1 1 calc(50% - 40px);
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    a {
-      color: #00bcd4;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrish | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
-    <h1>Hi 👋, I'm Yash Bankhele</h1>
-    <p>🎓 AI & Data Science Student | 🎨 UI/UX Designer | 🌐 Full-Stack Development Enthusiast</p>
-    <p>📍 Savitribai Phule Pune University (SPPU), Batch '26</p>
+    <h1>Shrish</h1>
+    <p>AI & Data Science | Final Year Student</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>💻 Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>House Price Prediction</h3>
-        <p>ML model to predict house prices using Python & Scikit-learn.</p>
-      </div>
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>This site! Made with HTML, CSS, and hosted on GitHub Pages.</p>
-      </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring Data Scientist and AI enthusiast in my final year. Passionate about building real-world projects and learning new technologies.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Data Analysis</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>AI Chatbot</h3>
+      <p>Created an AI chatbot using Python and NLP techniques for student query handling.</p>
+    </div>
+    <div class="project">
+      <h3>COVID-19 Dashboard</h3>
+      <p>Built an interactive data dashboard using Python, Pandas, and Plotly.</p>
     </div>
   </section>
 
-  <section>
-    <h2>🛠️ Skills</h2>
-    <div class="skills">
-      <div class="card">Python</div>
-      <div class="card">HTML/CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Figma</div>
-      <div class="card">GitHub</div>
-      <div class="card">Machine Learning</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:shreeyashbankhele198@gmail.com">shreeyashbankhele198@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/YashBankhele" target="_blank">@YashBankhele</a></p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Yash Bankhele. All rights reserved.</p>
+    <p>© 2025 Shrish. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
