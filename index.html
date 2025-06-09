@@ -296,9 +296,9 @@ With a strong foundation in data science and a creative eye for design, I aim to
         required
       />
     </div>
-    <!-- 📱 WhatsApp Contact Form -->
+   <!-- 📱 WhatsApp Contact Section -->
 <section id="contact-whatsapp" class="container py-5">
-  <h2 class="text-center mb-4">📱 Contact via WhatsApp</h2>
+  <h2 class="text-center mb-4">Contact via WhatsApp</h2>
   <form onsubmit="sendWhatsApp(); return false;" class="mx-auto" style="max-width: 500px;">
     <div class="mb-3">
       <label for="whatsapp-name" class="form-label">Name</label>
@@ -314,27 +314,23 @@ With a strong foundation in data science and a creative eye for design, I aim to
 
 <script>
   function sendWhatsApp() {
-    const name = document.getElementById("whatsapp-name").value;
-    const message = document.getElementById("whatsapp-message").value;
-    const phoneNumber = "+91-7410575099"; // <-- Yahan tumhara WhatsApp number likho (India ke liye 91 se shuru)
+    const name = document.getElementById("whatsapp-name").value.trim();
+    const message = document.getElementById("whatsapp-message").value.trim();
 
-    const url = `https://wa.me/${phoneNumber}?text=Hi, my name is ${encodeURIComponent(name)}.%0A${encodeURIComponent(message)}`;
+    if (name === "" || message === "") {
+      alert("Please fill in both fields.");
+      return;
+    }
+
+    const phoneNumber = "917410575099"; // ✅ Your WhatsApp number (without '+' or dashes)
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      "Hi, my name is " + name + ".\n" + message
+    )}`;
+
     window.open(url, "_blank");
   }
 </script>
 
-  
-  <div class="text-center mt-5">
-    <p><strong>Email:</strong> shreeyashbankhele198@gmail.com</p>
-    <p><strong>Phone:</strong> +91-7410575099</p>
-    <p><strong>Location:</strong> Pune, Maharashtra, India</p>
-    <p>
-      <a href="https://www.instagram.com/yashbankhele?igsh=MXFlbWU4OGo4anBmMA==" target="_blank" class="mx-2">Instagram</a> |
-      <a href="https://www.linkedin.com/in/yashbankhele?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="mx-2">LinkedIn</a> |
-      <a href="https://github.com/yashbankhele" target="_blank" class="mx-2">GitHub</a>
-    </p>
-  </div>
-</section>
 
 
   <!-- Footer -->
