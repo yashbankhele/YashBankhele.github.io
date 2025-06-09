@@ -296,26 +296,42 @@ With a strong foundation in data science and a creative eye for design, I aim to
         required
       />
     </div>
+    <!-- 📱 WhatsApp Contact Form -->
+<section id="contact-whatsapp" class="container py-5">
+  <h2 class="text-center mb-4">📱 Contact via WhatsApp</h2>
+  <form onsubmit="sendWhatsApp(); return false;" class="mx-auto" style="max-width: 500px;">
     <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea
-        class="form-control"
-        id="message"
-        rows="4"
-        placeholder="Write your message here..."
-        required
-      ></textarea>
+      <label for="whatsapp-name" class="form-label">Name</label>
+      <input type="text" id="whatsapp-name" class="form-control" placeholder="Your Name" required />
     </div>
-    <button type="submit" class="btn btn-dark w-100">Send Message</button>
+    <div class="mb-3">
+      <label for="whatsapp-message" class="form-label">Message</label>
+      <textarea id="whatsapp-message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Send on WhatsApp</button>
   </form>
+</section>
+
+<script>
+  function sendWhatsApp() {
+    const name = document.getElementById("whatsapp-name").value;
+    const message = document.getElementById("whatsapp-message").value;
+    const phoneNumber = "+91-7410575099"; // <-- Yahan tumhara WhatsApp number likho (India ke liye 91 se shuru)
+
+    const url = `https://wa.me/${phoneNumber}?text=Hi, my name is ${encodeURIComponent(name)}.%0A${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+  
   <div class="text-center mt-5">
-    <p><strong>Email:</strong> shrish@example.com</p>
-    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Email:</strong> shreeyashbankhele198@gmail.com</p>
+    <p><strong>Phone:</strong> +91-7410575099</p>
     <p><strong>Location:</strong> Pune, Maharashtra, India</p>
     <p>
-      <a href="https://www.instagram.com/shrish" target="_blank" class="mx-2">Instagram</a> |
-      <a href="https://www.linkedin.com/in/shrish" target="_blank" class="mx-2">LinkedIn</a> |
-      <a href="https://github.com/shrish" target="_blank" class="mx-2">GitHub</a>
+      <a href="https://www.instagram.com/yashbankhele?igsh=MXFlbWU4OGo4anBmMA==" target="_blank" class="mx-2">Instagram</a> |
+      <a href="https://www.linkedin.com/in/yashbankhele?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="mx-2">LinkedIn</a> |
+      <a href="https://github.com/yashbankhele" target="_blank" class="mx-2">GitHub</a>
     </p>
   </div>
 </section>
